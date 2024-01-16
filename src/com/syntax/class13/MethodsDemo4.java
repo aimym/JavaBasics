@@ -1,0 +1,16 @@
+package com.syntax.class13;
+
+public class MethodsDemo4 {
+
+	double checkDiscount(boolean isSaleOn, double originalPrice,double discount) {
+    if(isSaleOn) {
+    	return originalPrice-originalPrice*discount;
+    }else {
+    	return originalPrice;
+    }
+	}
+	public static void main(String[] args) {
+		MethodsDemo4 obj=new MethodsDemo4();
+		System.out.println(obj.checkDiscount(true, 100, .15));//85.0
+	}
+}
